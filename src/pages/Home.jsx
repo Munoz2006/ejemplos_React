@@ -1,18 +1,17 @@
 import { useState } from 'react'
 export const Home = () => {
-    const [usuario, setName] = useState('Usuario')
-    const [user, setUser] = useState('')
-    const addName = () => {
-        setName(user)
-    }
-    const handleChange = (e) => {
-        setUser(e.target.value)
-    }
+   const [color, setColor] = useState('#fff')
+   
+   const changeColor = () => {
+       setColor(`#${Math.floor(Math.random()*16777215).toString(16)}`)
+    }       
     return (
-        <div>
-            <h1>Bienvedo {usuario}</h1>
-            <input type="text" onChange={handleChange} />
-            <button  onClick={addName}>Cambiar nombre</button>
+        <>
+        <div className="container" style={{backgroundColor: color}}>
+            <h1>{color}</h1>
         </div>
+        <button onClick={changeColor}>Change Color</button>
+        </>
+        
     )
 }

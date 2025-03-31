@@ -12,7 +12,7 @@ export const Home = () => {
         <div>
             <h1>Bienvedo {usuario}</h1>
             <input type="text" onChange={handleChange} />
-            <button  onClick={addName}>Cambiar nombre</button>
+            <button  onClick={addName}>modificar nombre</button>
         </div>
     )
 }

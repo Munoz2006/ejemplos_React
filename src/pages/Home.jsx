@@ -10,7 +10,7 @@ export const Home = () => {
                 <input type="text" className="description-input" placeholder="Descripción"/>
                 <button id="add-button">Add Task</button>
             </div>
-            <div class="filter">
+            <div className="filter">
                 <button className="filter-button active" data-filter="all">All</button>
                 <button className="filter-button" data-filter="pending">Pending</button>
                 <button className="filter-button" data-filter="completed">Completed</button>
